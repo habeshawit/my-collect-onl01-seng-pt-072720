@@ -3,8 +3,10 @@ def my_collection(array)
   new_array = []
   
   while i<array.length 
-    << new_array 
+    new_array << 
     yield array[i]
     i+=1 
   end
+  
+  new_array
 end
